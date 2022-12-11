@@ -1,0 +1,252 @@
+li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+
+.link:hover {
+    color: #FF6D28;
+}
+
+.nav {
+    padding-top: 13px;
+}
+
+.cartlogo {
+    background: #FF6D28;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.logo {
+    color: #FF6D28;
+    font-weight: 900;
+}
+
+.fooditem {
+    border: 1px solid black;
+    padding: 0%;
+    text-align: center;
+    border-radius: 33px;
+    padding-bottom: 20px;
+}
+
+.food-img {
+    height: 200px;
+    border-radius: 33px;
+    max-width: 100%;
+}
+
+.cart-button .btn-outline-primary{
+    color:#FF6D28 !important;
+    border : 1.5px solid #FF6D28 !important;
+     font-size: 20px !important;
+ }
+
+ .cart-button .btn-outline-primary:hover{
+    background-color:#FF6D28 !important;
+    color: white !important;
+
+}
+
+
+.food-item img{
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+
+
+.order-link{
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.order-link:hover {
+    color: #FF6D28 !important;
+}
+
+/* *******ORDER DETAILS AND CART********* */
+.card{
+    margin: auto;
+    width: 38%;
+    max-width:600px;
+    padding: 4vh 0;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top: 3px solid rgb(252, 103, 49);
+    border-bottom: 3px solid rgb(252, 103, 49);
+    border-left: none;
+    border-right: none;
+    margin-bottom: 15px;
+}
+@media(max-width:768px){
+    .card{
+        width: 90%;
+    }
+}
+.title{
+    color: rgb(252, 103, 49);
+    font-weight: 600;
+    margin-bottom: 2vh;
+    padding: 0 8%;
+    font-size: initial;
+}
+#details{
+    font-weight: 400;
+}
+.info{
+    padding: 5% 8%;
+}
+.info .col-5{
+    padding: 0;
+}
+#heading{
+    color: grey;
+    line-height: 6vh;
+}
+.pricing{
+    background-color: #ddd3;
+    padding: 2vh 8%;
+    font-weight: 400;
+    line-height: 2.5;
+}
+.pricing .col-3{
+    padding: 0;
+}
+.total{
+    padding: 2vh 8%;
+    color: rgb(252, 103, 49);
+    font-weight: bold;
+}
+.total .col-3{
+    padding: 0;
+}
+
+/* *********************** */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login .login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login .form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.login .form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.login .form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f3824d;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.login .form button:hover,.form button:active,.form button:focus {
+  background:#f3824d;
+}
+.login .form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.login .form .message a {
+  color: #f3824d;
+  text-decoration: none;
+}
+.login .form .register-form {
+  display: none;
+}
+/* .login .container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.login .container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+.login .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.login .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.login .container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.login .container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.login .container .info span .fa {
+  color: #EF3B3A;
+}
+.login{
+  background:#f3824d;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 1px;
+  position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.select{
+    width:150px;
+}
+
+.status-button{
+    color:#FF6D28 !important;
+    border : 1.5px solid #FF6D28 !important;
+}
+
+.status-button:hover{ 
+    background-color:#FF6D28 !important;
+    color: white !important;
+}
