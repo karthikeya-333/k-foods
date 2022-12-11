@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoURI = "mongodb://localhost:27017/k-foods"
+const mongoURI = process.env.DATA_BASE;
 
 const connectToMongo = ()=>{
     mongoose.connect(mongoURI, ()=>{
