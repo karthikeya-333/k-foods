@@ -1,12 +1,17 @@
 const mongoose = require('mongoose');
-require('dotenv').config();
+
+require("dotenv").config();
 
 const mongoURI = process.env.DATA_BASE;
 
 const connectToMongo = ()=>{
     mongoose.connect(mongoURI, ()=>{
-        console.log("Connected to Mongo Successfully");
+        
     })
+
+    mongoose.connect(mongoURI).then(()=>{
+        console.log("Connected to Mongo Successfully");
+    }).catch((err)=>{console.log(err)})
 }
 
 module.exports = connectToMongo;

@@ -5,14 +5,14 @@ import itemContext from '../contexts/Context';
 
 
 const Login = (props) => {
-    const host = "https://k-fooods-backend1.onrender.com"
     const context= useContext(itemContext);
+    let host = "https://k-fooods-backend1.onrender.com";
     const {role,setRole}= context;
     const [credentials, setCredentials] = useState({ email: "", password: "" })
     const navigate = useNavigate();
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch(host +"/api/auth/login", {
+        const response = await fetch(host+"/api/auth/login", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -44,13 +44,13 @@ const Login = (props) => {
 
     return (
         <div className="login">
-            <div class="login-page">
-                <div class="form">
-                    <form class="login-form" onSubmit={handleSubmit}>
+            <div className="login-page">
+                <div className="form">
+                    <form className="login-form" onSubmit={handleSubmit}>
                         <input type="text" placeholder="username" name="email" value={credentials.email} onChange={onChange} />
                         <input type="password" placeholder="password" name="password" value={credentials.password} onChange={onChange} />
                         <button>login</button>
-                        <p class="message">Not registered? <Link to="/signup">Create an account</Link></p>
+                        <p className="message">Not registered? <Link to="/signup">Create an account</Link></p>
                     </form>
                 </div>
             </div>
