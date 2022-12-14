@@ -1,5 +1,6 @@
 {
   "name": "k-foods",
+  "proxy":"http://localhost:3000/api",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

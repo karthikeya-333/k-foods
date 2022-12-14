@@ -4,12 +4,12 @@ import itemContext from "./Context";
 
 
 function State(props) {
-  const host = "http://localhost:5000"
+  const host = "https://k-fooods-backend1.onrender.com"
   let cartItems = [];
   const [items, setItems] = useState(cartItems);
 
   async function getItems() {
-    const response = await fetch(host + "/api/items/getItems", {
+    const response = await fetch("/api/items/getItems", {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ function State(props) {
 
   async function addItem(type, name, number, price) {
     console.log("new Item");
-    const response = await fetch(host + "/api/items/addItem", {
+    const response = await fetch("/api/items/addItem", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ function State(props) {
   }
 
   async function deleteItem(id) {
-    const response = await fetch(host + "/api/items/deleteItem/" + String(id), {
+    const response = await fetch("/api/items/deleteItem/" + String(id), {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ function State(props) {
 
 
   async function addOrder(address) {
-    const response = await fetch(host + "/api/orders/addOrder", {
+    const response = await fetch("/api/orders/addOrder", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -72,7 +72,7 @@ function State(props) {
   }
 
   async function getOrders() {
-    const response = await fetch(host + "/api/orders/getOrders", {
+    const response = await fetch("/api/orders/getOrders", {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -91,7 +91,7 @@ function State(props) {
   const [allorders, setAllorders] = useState(totalOrders);
 
   async function getAllorders() {
-    const response = await fetch(host + "/api/orders/getAllorders", {
+    const response = await fetch("/api/orders/getAllorders", {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ function State(props) {
   }
 
   async function updateStatus(id,status){
-    const response = await fetch(host + "/api/orders/update/"+String(id), {
+    const response = await fetch("/api/orders/update/"+String(id), {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
