@@ -38,8 +38,8 @@ function Cart() {
 
 
     return (
-        <div className="card">
-            <div className="title"><h3>Your Cart</h3></div>
+        <div className="card" style={{marginTop:60}}>
+            <div className="title  fontheading"><h3>My Cart</h3></div>
             <div className="pricing">
                 {items.map((item) => {
                     return <Cartitem key={item.name} item={item} />
@@ -52,13 +52,13 @@ function Cart() {
                     <div className="col-3"><big>₹{amount}</big></div>
                 </div>
             </div>
-            {amount!=0 && <div>
-                <div classNameName="container text-center">
-                    <label className="title" style={{ padding: 3 }}>Address:</label>
+            {amount!=0 && <div className="text-center">
+                <div >
+                    <label className="title " style={{ padding: 3 }}>Address:</label>
                     <input name="address" value={address} onChange={handleChange} />
                 </div>
-                <div classNameName="text-center cart-button" style={{ marginTop: 15 }}>
-                    <Link classNameName="btn btn-outline-primary " onClick={handleClick} role="button">Next</Link>
+                <div style={{ marginTop: 15 }}>
+                    <button class="btn btn-light">Place Order</button>
                 </div>
             </div>}
         </div>
@@ -69,11 +69,3 @@ function Cart() {
 export default Cart;
 
 
-{/* <div classNameName="container " style={{justifyContent: "center"}}>
-            <div classNameName="container text-center">
-                
-                <h5>total amount = </h5>
-                
-            </div>
-            
-        </div> */}

@@ -19,7 +19,7 @@ function Orders() {
     return (
         <div className="container">
             <div>
-                <h2>Your Orders</h2>
+            <div className="title  fontheading text-center" style={{padding:0,marginBottom:45}}><h3>My Orders</h3></div>
                 <table className="table">
                     <thead className="thead-light">
                         <tr>

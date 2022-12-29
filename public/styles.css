@@ -1,3 +1,5 @@
+
+
 li {
     list-style: none;
     padding-top: 5px;
@@ -28,41 +30,6 @@ li {
     color: #FF6D28;
     font-weight: 900;
 }
-
-.fooditem {
-    border: 1px solid black;
-    padding: 0%;
-    text-align: center;
-    border-radius: 33px;
-    padding-bottom: 20px;
-}
-
-.food-img {
-    height: 200px;
-    border-radius: 33px;
-    max-width: 100%;
-}
-
-.cart-button .btn-outline-primary{
-    color:#FF6D28 !important;
-    border : 1.5px solid #FF6D28 !important;
-     font-size: 20px !important;
- }
-
- .cart-button .btn-outline-primary:hover{
-    background-color:#FF6D28 !important;
-    color: white !important;
-
-}
-
-
-.food-item img{
-    width: 300px;
-    height: 200px;
-    border-radius: 25px;
-}
-
-
 
 .order-link{
     text-decoration: none;
@@ -189,17 +156,6 @@ li {
 .login .form .register-form {
   display: none;
 }
-/* .login .container {
-  position: relative;
-  z-index: 1;
-  max-width: 300px;
-  margin: 0 auto;
-}
-.login .container:before, .container:after {
-  content: "";
-  display: block;
-  clear: both;
-} */
 .login .info {
   margin: 50px auto;
   text-align: center;
@@ -237,16 +193,3 @@ li {
     height: 100%;
 }
 
-.select{
-    width:150px;
-}
-
-.status-button{
-    color:#FF6D28 !important;
-    border : 1.5px solid #FF6D28 !important;
-}
-
-.status-button:hover{ 
-    background-color:#FF6D28 !important;
-    color: white !important;
-}

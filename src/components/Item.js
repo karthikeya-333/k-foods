@@ -26,39 +26,39 @@ function Item(props) {
     }
 
     return (
-        <div className="col-sm-6 col-md-4" style={{marginBottom : 20,marginTop:15}}>
-            <div className="fooditem" >
-                <img className="food-img card-img-bottom" src={path} />
-                <div>
-                    <h2>{props.name[0]}</h2>
-                    <h2>₹{props.name[1]}</h2>
-                    <div style={{display:"inline-flex",marginBottom : 5}} className="text-center">
-                        <button className="number-button btn btn-outline-primary " onClick={handleDecrease}>-</button>
-                        <button style={{marginLeft: 7,marginRight: 7}} type="button" className="btn btn-outline-primary cart-button" onClick={handleAdd}> Add to cart </button>
-                        <button className="number-button btn btn-outline-primary" onClick={handleIncrease}>+</button>
-                    </div>
+        <div className="col-sm-6 col-md-5 item ">
+            <img className="card-img-bottom" src={path} />
+            <div className="item-info card-img-bottom">
+                <h3 className="fontitem text-center" style={{ "marginBottom": 25 }}>{props.name[0]}</h3>
+                <h3 className="fontitem text-center" style={{ "marginBottom": 25 }}>₹{props.name[1]}</h3>
+                <div className="card-img-bottom  text-center" style={{ "marginBottom": 25 }}>
+                    <button class="btn btn-light col-2" style={{ "marginRight": 1 }} onClick={handleDecrease}>-</button>
+                    <button class="btn btn-light col-4" style={{ "paddingRight": 5 ,"paddingLeft":5}}  onClick={handleAdd}>Add</button>
+                    <button class="btn btn-light col-2" style={{ "marginLeft": 1 }} onClick={handleIncrease}>+</button>
                 </div>
-                <span style={{margin: 5,color:"#FF6D28"}}>Quantity:{number}</span>
+                <div  className="text-center"><span style={{ margin: 5, color: "#FF6D28" }}>Quantity:{number}</span></div>
             </div>
-            
         </div>
+
 
     )
 }
 
 export default Item;
 
-{/* <div className="col-4">
-            <div className="food-item ">
-                <img src={path} />
-                <h4>{props.name[0]}</h4>
-                <h4>{props.name[1]}</h4>
-                <div className="d-flex justify-content-center">
-                <button type="button" class="btn btn-outline-secondary" onClick={handleIncrease}>-</button>
-                <h4>Quantity : {number}</h4>
-                <button type="button" class="btn btn-outline-secondary" onClick={handleDecrease}>+</button>
+{/* <div className="col-sm-6 col-md-4" style={{marginBottom : 20,marginTop:15}}>
+            <div className="fooditem" >
+                <img className="food-img card-img-bottom" src={path} />
+                <div>
+                    <h2>{props.name[0]}</h2>
+                    <h2>₹{props.name[1]}</h2>
+                    <div style={{display:"inline-flex",marginBottom : 5}} className="text-center">
+                        <button className="number-button btn btn-outline-primary ">-</button>
+                        <button style={{marginLeft: 7,marginRight: 7}} type="button" className="btn btn-outline-primary cart-button"> Add to cart </button>
+                        <button className="number-button btn btn-outline-primary" >+</button>
+                    </div>
                 </div>
-                <button type="button" class="btn btn-outline-primary cart-button" onClick={handleAdd}>Add to cart</button>
-
+                <span style={{margin: 5,color:"#FF6D28"}}>Quantity:{number}</span>
             </div>
+            
         </div> */}

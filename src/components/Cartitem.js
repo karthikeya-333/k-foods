@@ -14,15 +14,18 @@ function Cartitem(props){
     }
 
     return(
-        <div class="row">
-                    <div class="col-5">
+        <div className="row">
+                    <div className="col-5">
                         <span id="name">{item.name}</span>  
                     </div>
-                    <div class="col-3">
+                    <div className="col-3">
                         <span id="price">{item.quantity}</span>
                     </div>
-                    <div class="col-3">
+                    <div className="col-3">
                         <span id="price">₹{totalPrice}</span>
+                    </div>
+                    <div className="col-1">
+                        <span id="price"><i onClick={handleDelete} style={{cursor : "pointer"}} className="fa-solid fa-circle-minus"></i></span>
                     </div>
                 </div>
 
@@ -32,13 +35,13 @@ function Cartitem(props){
 export default Cartitem;
 
 
- // <div className="cart-item ">
+ // <div classNameName="cart-item ">
         //     <div>
         //     <h5></h5>
         //     <h5></h5>
         //     </div>
         //     <div>
         //     <h5></h5>
-        //     <i class="fa-solid fa-circle-minus" style={{cursor : "pointer"}} onClick={handleDelete}></i>
+        //     <i className="fa-solid fa-circle-minus" style={{cursor : "pointer"}} onClick={handleDelete}></i>
         //     </div>
         // </div>
