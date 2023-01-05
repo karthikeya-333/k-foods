@@ -7,7 +7,7 @@ const vegItems = [["Tomato",20], ["Brinjal",20],[ "Ladies Finger",20], ["Dal",20
 const nonvegItems = [["Chicken",50],["Mutton",70],["Fish",50],["Egg",20]];
 const otherItems = [["Rice",25],["Biryani",80]];
 
-
+//hi
 function Fooditems() {
 
     const context = useContext(itemContext);
